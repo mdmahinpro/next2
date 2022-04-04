@@ -8,7 +8,7 @@ export default function Home({ users }) {
         Welcome Web Developers
       </h1>
       {users.map((user) => (
-        <div>
+        <div key={user.id}>
           <Link href={`/user/${user.id}`}>
             <h1 className="text-3xl shadow-md m-4 p-4 text-gray-500 hover: border-l-2 hover:border-orange-400">
               {user.name}
