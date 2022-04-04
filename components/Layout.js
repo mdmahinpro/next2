@@ -1,10 +1,12 @@
+import Meta from "./Meta";
 import Navbar from "./Navbar";
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
     <div className="space-y-8">
-        <Navbar></Navbar>
-        {children}
+      <Meta></Meta>
+      <Navbar></Navbar>
+      {children}
     </div>
-  )
+  );
 }
