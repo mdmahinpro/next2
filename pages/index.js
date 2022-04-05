@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { server } from "../config";
 
 export default function Home({ users }) {
   return (
@@ -21,7 +20,7 @@ export default function Home({ users }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/users`);
+  const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
   const users = await res.json();
 
   return {
