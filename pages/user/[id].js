@@ -6,7 +6,7 @@ const User = ({ user }) => {
   useEffect(() => {
     setTimeout(() => {
       router.push("/");
-    }, 3000);
+    }, 30000);
   }, []);
   return (
     <div className="shadow-2xl m-20 p-10 text-center">
